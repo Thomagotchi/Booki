@@ -66,8 +66,7 @@ a {
     height: 79px;
     max-width: 1440px;
     display: flex;
-    font-size: 16px;
-    font-weight: 400;
+    margin: 0 0 30px 0;
 }
 
 .header .logo {
@@ -91,10 +90,28 @@ a {
 }
 .header a:hover {
     color: var(--main-color);
-    padding: 14px 0;
+    padding: 14px 0 0 0;
     border-top: 2px solid #0065FC;
 }
 
+/****** Headline ***********/
+.info-group {
+    gap: 35px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.info-group .headline {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info-group .headline h1 {
+    font-size: 22px;
+    font-weight: 1000;
+}
+/****** Search-bar ***********/
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
