@@ -368,6 +368,7 @@ li {
 .populaires-cards .card-content {
     width: 67%;
     padding-left: 15px;
+    font-size: 14px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
