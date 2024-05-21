@@ -60,7 +60,6 @@ a {
     color: var(--main-bg-color)
 }
 
-
 li {
     list-style: none;
 }
@@ -105,8 +104,9 @@ li {
     flex-direction: column;
     justify-content: left;
     gap: 35px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
+    margin-bottom: 35px;
 }
 
 
@@ -115,11 +115,7 @@ li {
     display: flex;
     flex-direction: column;
     gap: 8px;
-}
-
-.info-group .headline h1 {
-    font-size: 22px;
-    font-weight: 1000;
+    font-size: 16px;
 }
 
 /****** Search-bar ***********/
@@ -158,23 +154,58 @@ li {
 }
 
 .search-bar input {
-    text-align: center;
+    padding: 20px 24px;
     font-size: 18px;
     font-weight: 530;
     border: 1px solid #F2F2F2;
-    width: 200px;
+    min-width: 200px;
 }
 
-.search-bar input::placeholder {
+.search-bar input:focus {
     color: black;
+    outline: none;
 }
 
 /****** Filtres ***********/
 
-.info-group .filtres {
+.filtres {
     list-style: none;
     display: flex;
+    align-items: center;
+    gap: 15px;
     flex-direction: row;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.filters h3 {
+    font-size: 18px;
+}
+
+.filtres li {
+    display: flex;
+    height: 38px;
+    padding: 4px 15px;
+    border-radius: 25px;
+    border: 2px solid #F2F2F2;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.filters li:hover {
+    background-color: #DEEBFF;
+}
+
+.filtres li a {
+    display: flex;
+    gap: 10px;
+}
+
+.filtres li a i {
+    align-items: center;
+    height: 22px;
+    width: 22px;
+    display: flex;
 }
 
 /****** Hebergements And Populaires ***********/
