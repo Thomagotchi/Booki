@@ -62,6 +62,10 @@ a {
 
 
 /****** Header ***********/
+.header li {
+    list-style: none;
+}
+
 .header {
     height: 79px;
     max-width: 1440px;
@@ -94,6 +98,16 @@ a {
     border-top: 2px solid #0065FC;
 }
 
+
+/****** Search-bar ***********/
+.info-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 35px;
+}
+
+
 /****** Headline ***********/
 .info-group {
     gap: 35px;
@@ -112,6 +126,58 @@ a {
     font-weight: 1000;
 }
 /****** Search-bar ***********/
+
+.search-bar {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    display: grid;
+    grid-template-columns: 50px 195px 132px;
+    grid-template-rows: 50px;
+    width: 377px;
+    max-height: 49px;
+    border-radius: 50px;
+}
+
+.search-bar label {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    background-color: #f2f2f2;
+    border-radius: 15px 0 0 15px;
+    border: 1px solid #F2F2F2;
+}
+
+.search-bar i {
+    color: black;
+}
+
+.search-bar button {
+    font-size: 18px;
+    font-weight: 530;
+    color: black;
+    display: grid;
+    padding: 15px;
+    border: none;
+    background-color: #0065FC;
+    color: #F2F2F2;
+    border-radius: 0 15px 15px 0;
+    margin-left: auto;
+}
+
+.search-bar input {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 530;
+    /* color: black; */
+    display: flex;
+    border: 1px solid #F2F2F2;
+    width: 200px;
+}
+
+.search-bar input::placeholder {
+    color: black;
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
