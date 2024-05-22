@@ -234,12 +234,12 @@ li {
 }
 
 .hebergements-and-populaires section {
+    /* height: 36.7rem; */
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
     margin-bottom: 35px;
     box-sizing: border-box;
-    justify-content: center;
 }
 
 /****** Hebergements ***********/
@@ -248,13 +248,15 @@ li {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    /* justify-content: center; */
 }
 
 .hebergements-cards {
+    /* min-height: fit-content; */
     gap: 30px;
     display: grid;
-    grid-template-columns: repeat(3, 250px);
-    grid-template-rows: 207px 207px;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat( auto-fit, minmax(207px, 1fr));
 }
 
 
@@ -295,18 +297,15 @@ li {
 
 .hebergements-cards .card {
     gap: 4px;
-    width: 240px;
-    height: 198px;
+    height: 200px;
     border: none;
     display: flex;
     flex-direction: column;
 }
 
 .hebergements-cards img {
-    width: 240px;
-    justify-content: center;
     align-items: center;
-    height: 124px;
+    height: 60%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -315,7 +314,6 @@ li {
     font-size: 14px;
     display: flex;
     flex-direction: column;
-    gap: 6px;
 }
 
 .hebergements-cards .card-content {
@@ -331,7 +329,7 @@ li {
 
 .hebergements-cards .card-title {
     font-size: 16px;
-    margin-top: 4px;
+    margin: 6px 0 8px 0;
 }
 
 .hebergements-cards .card-subtitle {
@@ -453,11 +451,7 @@ li {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-    .main-container {
-  
-    }
+@media (max-width: 1278px) {
 
     .hebergements-and-populaires {
         flex-direction: column;
@@ -469,7 +463,23 @@ li {
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
+        /* margin-top: 50px; */
+    }
+}
+
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        /* margin-top: 50px; */
     }
 
     .populaires-cards {
