@@ -183,6 +183,12 @@ li {
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+.filter-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
     flex-direction: row;
     font-size: 18px;
     font-weight: 700;
@@ -448,6 +454,10 @@ li {
 
 /****** Media queries ***********/
 @media (max-width: 1278px) {
+    .filtres {
+        align-items: start;
+        flex-direction: column;
+    }
 
     .hebergements-and-populaires {
         flex-direction: column;
