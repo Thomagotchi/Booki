@@ -727,4 +727,8 @@ li {
         gap: 50px;
         padding: 30px;
     }
+
+    .footer-column {
+        width: 100%;
+    }
 }
