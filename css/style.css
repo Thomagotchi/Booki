@@ -125,11 +125,14 @@ li {
 
 /****** Search-bar ***********/
 .search-bar {
-    display: grid;
-    grid-template-columns: 50px 195px 132px;
-    grid-template-rows: 50px;
-    width: 377px;
-    max-height: 49px;
+    z-index: 1;
+    max-height: 50px;
+    border: 1px solid #F2F2F2;
+    max-width: 377px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    overflow:visible;
 }
 
 .search-bar label {
@@ -137,25 +140,41 @@ li {
     align-items: center;
     display: flex;
     background-color: #f2f2f2;
-    border-radius: 15px 0 0 15px;
-    border: 1px solid #F2F2F2;
+    border-radius: 14px 0 0  14px;
 }
 
 .search-bar i {
+    color: white;
+}
+
+.search-bar label > i {
+    height: 18px;
+    padding: 16px;
     color: black;
 }
 
 .search-bar button {
+    color: white;
+    padding: 14px;
+    border: 2px solid #0065FC;
+    background-color: #0065FC;
+    overflow:visible;
+}
+
+.search-bar .search-button2 {
+    z-index: 2;
+    padding: 16.5px;
+    display: none;
+    color: #F2F2F2;
+    border-radius: 15px;
+    filter: drop-shadow(0px 3px 1px rgba(0, 2, 0, 0.25));
+
+}
+
+.search-bar .search-button {
     font-size: 18px;
     font-weight: 530;
-    color: black;
-    display: grid;
-    padding: 15px;
-    border: none;
-    background-color: #0065FC;
-    color: #F2F2F2;
     border-radius: 0 15px 15px 0;
-    margin-left: auto;
 }
 
 .search-bar button:hover {
@@ -163,11 +182,10 @@ li {
 }
 
 .search-bar input {
-    padding: 20px 24px;
+    padding: 14px 23px;
     font-size: 18px;
     font-weight: 530;
-    border: 1px solid #F2F2F2;
-    min-width: 200px;
+    border: none;
 }
 
 .search-bar input:focus {
@@ -619,7 +637,7 @@ li {
     /****** info-group ***********/
     .info-group {
         overflow: hidden;
-        margin: 0 30px;
+        margin: 0 20px;
     } 
 
     /****** Header ***********/
@@ -655,7 +673,22 @@ li {
         padding: 0 0 12px 0;
         border-bottom: 2px solid #0065FC;
     }
+    /****** Search Button ***********/
+    .search-bar {
+        max-width: 100%;
+    }
 
+    .search-bar .search-button {
+        display: none;
+    }
+
+    .search-bar .search-button2 {
+        display: flex;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
 
     /****** Hebergements And Populaires ***********/
     .hebergements-and-populaires {
@@ -697,7 +730,7 @@ li {
 
     .populaires-cards {
         gap: 15px;
-        max-width: fit-content;
+        width: auto;
         flex-direction: column;
         padding:0 20px 20px 20px;
     }
