@@ -691,11 +691,15 @@ li {
         
     }
 
+    .populaires-title {
+        padding: 20px 20px 15px 20px;
+    }
+
     .populaires-cards {
-        gap: 20px;
-        width: fit-content;
+        gap: 15px;
+        max-width: fit-content;
         flex-direction: column;
-        padding: 30px;
+        padding:0 20px 20px 20px;
     }
 
     .populaires-cards > a {
@@ -704,10 +708,12 @@ li {
 
     .populaires-cards .card {
         margin-top: 0;
-        width: 100%!important;
     }
 
      /****** Hebergements ***********/
+     .hebergements-title, .hebergements-plus {
+        padding: 0 20px;
+     }
      .hebergements-cards {
         padding: 20px;
      }
